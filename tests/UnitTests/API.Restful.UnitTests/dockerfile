@@ -1,0 +1,9 @@
+FROM microsoft/aspnetcore-build AS builder
+
+WORKDIR /
+
+#copy src
+COPY src/API.Restful/API.Restful.csproj /src
+COPY tests/UnitTests/API.Restful.UnitTests/API.Restful.UnitTests.csproj /tests
+RUN dotnet restore /tests/API.Restful.UnitTests.csproj
+RUN dotnet restore /src/API.Restful.csproj

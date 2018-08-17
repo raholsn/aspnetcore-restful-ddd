@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  api.restful:
+    image: ${DOCKER_REGISTRY}apirestful
+    build:
+      context: .
+      dockerfile: src/API.Restful/Dockerfile

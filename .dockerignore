@@ -1,0 +1,12 @@
+bin
+obj
+LICENSE
+dockerfile
+**/.git/
+**/.vs/
+**/Dockerfile*
+**/.dockerignore*
+**/docker-compose*.yml
+**/*.user
+**README.md
+Dockerfile

@@ -51,6 +51,9 @@ namespace API.Restful.Controllers
             var previousPageLink = result.Data.HasPrevious ? CreateResourceUri(metadataResourceParameters, ResourceUriType.PreviousPage) : null;
             var nextPageLink = result.Data.HasNext ? CreateResourceUri(metadataResourceParameters, ResourceUriType.NextPage) : null;
 
+            var a = 1;
+            var b = a;
+
             var paginationMetaData = new
             {
                 totalCount = result.Data.TotalCount,
